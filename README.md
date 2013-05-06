@@ -56,4 +56,4 @@ c:\Documents and Settings\%current user%\apktool\framework\*
 2.请保证java与android环境变量不存在空格，如有请在代码执行命令前直接写上路径后运行比如：
 D:\android-sdk-windows\tools\zipalign
 
-3.不支持Java jar包中包含有资源文件的apk项目，受apktool工具本身功能限制(如有jar包源码，可尝试把jar中的资源文件放进assets使用Android函数加裁)
+3.不支持Java jar包中包含有资源文件的apk项目，受apktool工具本身功能限制(如有jar包源码，可尝试把jar中的资源文件放进assets使用Android函数加载)
