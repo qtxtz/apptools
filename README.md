@@ -16,9 +16,40 @@ Android多渠道打包工具
 7.回到 3 替换新的渠道<br />
 8.完成打包<br />
 
-3.注意事项
+
+3.工程目录结构
 ========
-1.如果您的电脑以前使用过apktool工具请删除工具生成老的framework.jar 路径:
+源码形式：<br />
+
+> ├apktool<br />
+> &nbsp;&nbsp;├src<br />
+> &nbsp;&nbsp;├bin<br />
+> &nbsp;&nbsp;├.classpath<br />
+> &nbsp;&nbsp;├.project<br />
+> &nbsp;&nbsp;├linux<br />
+> &nbsp;&nbsp;├macosx<br />
+> &nbsp;&nbsp;├windows<br />
+> &nbsp;&nbsp;├map.properties<br />
+ 
+命令行形式：<br />
+> ├pro java -jar apktool.jar<br />
+> &nbsp;&nbsp;├apktool.jar<br />
+> &nbsp;&nbsp;├linux<br />
+> &nbsp;&nbsp;├macosx<br />
+> &nbsp;&nbsp;├windows<br />
+> &nbsp;&nbsp;├map.properties<br />
+
+4.使用教程
+========
+1.配置map.properties<br />
+2.更改要打包项目的AndroidManifest.xml 中的 渠道号 字符替换为map.properties中配置的channelFlag
+指定字符 打好包后放到map.properties配置的指定入径<br />
+3.直接源码eclipse中右键运行打包工具<br />
+4.可打jar包命令行运行打包工具<br />
+
+5.注意事项
+========
+1.如果您的电脑以前使用过apktool工具请删除工具生成老的framework.jar 路径(windows平台):
 c:\Documents and Settings\%current user%\apktool\framework\*
 
 2.请保证java与android环境变量不存在空格，如有请在代码执行命令前直接写上路径后运行比如：
