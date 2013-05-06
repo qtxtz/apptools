@@ -3,10 +3,13 @@ Android多渠道打包工具
 
 支持跨平台、命令行、多渠道、多平台、平均10s打一个包
 
-1. 环境设置保证apktool运行正常
+1. 环境要求
 ========
-可参考官方项目：https://code.google.com/p/android-apktool/
-
+<ul>
+  <li>JRE 1.6 (Java Runtime Environment)</li>
+  <li>aapt command in a PATH</li>
+  <li>basic knowledge of what is SDK, aapt, PATH, smali and Google search engine may be useful</li>
+</ul>
 2.打包流程
 ========
 1.设置当前process 的环境变量，保证 apktool 可以正常工作<br />
