@@ -1,6 +1,8 @@
 Android多渠道打包工具
 ========
 
+支持跨平台、命令行、多渠道、多平台
+
 1. 环境设置保证apktool运行正常
 ========
 可参考官方项目：https://code.google.com/p/android-apktool/
