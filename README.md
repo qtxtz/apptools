@@ -32,8 +32,8 @@ Android多渠道打包工具
 > &nbsp;&nbsp;├map.properties<br />
  
 命令行形式：<br />
-> ├pro java -jar apktool.jar<br />
-> &nbsp;&nbsp;├apktool.jar<br />
+> ├pro java -jar xxx.jar<br />
+> &nbsp;&nbsp;├xxx.jar<br />
 > &nbsp;&nbsp;├linux<br />
 > &nbsp;&nbsp;├macosx<br />
 > &nbsp;&nbsp;├windows<br />
