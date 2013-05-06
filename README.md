@@ -6,9 +6,8 @@ Android多渠道打包工具
 1. 环境要求
 ========
 <ul>
-  <li>JRE 1.6 (Java Runtime Environment)</li>
-  <li>aapt command in a PATH</li>
-  <li>basic knowledge of what is SDK, aapt, PATH, smali and Google search engine may be useful</li>
+  <li>Java SDK</li>
+  <li>Android SDK</li>
 </ul>
 2.打包流程
 ========
