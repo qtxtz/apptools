@@ -1,7 +1,7 @@
 Android多渠道打包工具
 ========
 
-支持跨平台、命令行、多渠道、多平台、平均10s打一个包
+支持跨平台、命令行、多渠道、平均6秒打一个包
 
 1. 环境要求
 ========
@@ -23,7 +23,7 @@ Android多渠道打包工具
 
 3.工程目录结构
 ========
-源码形式：<br />
+源码：<br />
 
 > ├apktool<br />
 > &nbsp;&nbsp;├src<br />
@@ -35,9 +35,9 @@ Android多渠道打包工具
 > &nbsp;&nbsp;├windows<br />
 > &nbsp;&nbsp;├map.properties<br />
  
-命令行形式：<br />
-> ├pro java -jar xxx.jar<br />
-> &nbsp;&nbsp;├xxx.jar<br />
+命令行：<br />
+> ├pro java -jar apptools.jar<br />
+> &nbsp;&nbsp;├apptools.jar<br />
 > &nbsp;&nbsp;├linux<br />
 > &nbsp;&nbsp;├macosx<br />
 > &nbsp;&nbsp;├windows<br />
@@ -49,15 +49,13 @@ Android多渠道打包工具
 1.配置map.properties<br />
 2.更改自己要打包项目的AndroidManifest.xml(可参考apps demo)中的渠道号字符替换为map.properties中配置的channelFlag
 指定字符 打好包后放到map.properties配置的指定路径<br />
-3.直接源码eclipse中右键运行打包工具(如不行请打包成jar包运行，避免权限入径问题)<br />
-4.可打jar包命令行运行打包工具<br />
+3.执行命令行：java -jar apptools.jar<br />
 
 5.注意事项
 ========
 1.如果您的电脑以前使用过apktool工具请删除工具生成老的framework.jar 路径(windows平台):
 c:\Documents and Settings\%current user%\apktool\framework\*
 
-2.请保证java与android环境变量不存在空格，如有请在代码执行命令前直接写上路径后运行比如：
-D:\android-sdk-windows\tools\zipalign
+2.请尽量避免java与android环境变量不存在空格
 
 3.不支持Java jar包中包含有资源文件的apk项目，受apktool工具本身功能限制(如有jar包源码，可尝试把jar中的资源文件放进assets使用Android函数加载)
