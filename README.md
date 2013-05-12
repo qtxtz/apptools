@@ -56,6 +56,6 @@ Android多渠道打包工具
 1.如果您的电脑以前使用过apktool工具请删除工具生成老的framework.jar 路径(windows平台):
 c:\Documents and Settings\%current user%\apktool\framework\*
 
-2.请尽量避免java与android环境变量不存在空格
+2.请尽量避免java与android环境变量存在空格
 
 3.不支持Java jar包中包含有资源文件的apk项目，受apktool工具本身功能限制(如有jar包源码，可尝试把jar中的资源文件放进assets使用Android函数加载)
