@@ -49,7 +49,7 @@ Android多渠道打包工具
 1.配置map.properties<br />
 2.更改自己要打包项目的AndroidManifest.xml(可参考apps demo)中的渠道号字符替换为map.properties中配置的channelFlag
 指定字符 打好包后放到map.properties配置的指定路径<br />
-3.执行命令行：java -jar apptools.jar<br />
+3.执行命令行：java -jar apptools.jar 或者 java -jar apptools.jar google,baidu,yyh<br />
 
 5.注意事项
 ========
