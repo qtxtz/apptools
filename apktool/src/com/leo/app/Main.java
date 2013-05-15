@@ -345,10 +345,9 @@ public class Main {
 
 	private static String generateDstFile(String channel) {
 		String project_name = projectName;
-		String file_name = String.format("%s_%s_%s.apk", project_name, channel,
-				versionName);
+		String file_name = String.format("%s_%s.apk", project_name, channel);
 
-		File file = new File(location, project_name);
+		File file = new File(location, String.format("%s_%s",project_name,versionName));
 		String dst_path = file.getAbsolutePath();
 
 		if (!file.exists()) {
