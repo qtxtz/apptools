@@ -58,6 +58,6 @@ c:\Documents and Settings\%current user%\apktool\framework\*
 
 2.请尽量避免java与android环境变量存在空格
 
-3.不支持jar包中包含有资源文件(android模式的jar中有assets资源除外,打包时会自动把assets合并进项目)的apk项目，受apktool工具本身功能限制(如有jar包源码，可尝试把源码建立成Android项目，把资源放进assets以Android方式加载打包成jar)
+3.不支持jar包中包含有资源文件的apk项目，受apktool工具本身功能限制(如有jar包源码，可尝试把源码建立成Android项目，把资源放进assets以Android方式加载打包成jar. android模式的jar中有assets资源,打包时会自动把assets合并进项目)
 
 4.如出现aapt命令问题，请解决环境变量入径问题 如：Android SDK Tools 版本为22时需在Android SDK Manager中安装Android SDK Build-tools 然后添加路径%ANDROID_SDK_HOME%\build-tools\17.0.0;到Path
